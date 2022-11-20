@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portal_de_estudiantes/src/home_screen.dart';
 import 'package:portal_de_estudiantes/utils/portal_corlos.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -166,7 +167,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                             "Ingrese su RUT sin punto ni guión",
                                         hintStyle: TextStyle(),
                                         border: InputBorder.none,
+                                        counterText: "",
                                       ),
+                                      maxLength: 10,
                                     ),
                                   ),
                                 ],
@@ -277,7 +280,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       // * Check Box and Login Button
-                      Container(
+                      SizedBox(
                         width: width * 0.25,
                         height: height * 0.12,
                         child: Column(
@@ -327,20 +330,34 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ],
                               ),
                             ),
-                            Container(
-                              width: width * 0.2,
-                              height: height * 0.05,
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                color: mainColor,
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Text(
-                                "Ingresar",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: height * 0.014),
+                            // * Button
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder:
+                                        (context, animation1, animation2) =>
+                                            HomeScreen(),
+                                    transitionDuration: Duration.zero,
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                width: width * 0.2,
+                                height: height * 0.05,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  color: mainColor,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Text(
+                                  "Ingresar",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: height * 0.014),
+                                ),
                               ),
                             ),
                           ],

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 const Color mainColor = Color(0xFF171d78);
 const Color secColor = Color(0xFFb3bbdb);
 const Color backgroundColor = Color(0xFFf7f6f6);
+const Color placeholdColor = Color(0xFFebebeb);
 
 // * Buttons
 
