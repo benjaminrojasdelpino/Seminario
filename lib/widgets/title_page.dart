@@ -19,7 +19,7 @@ class TitlePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width * 0.6,
+      width: width,
       height: heigth * 0.04,
       child: FittedBox(
         fit: BoxFit.contain,
