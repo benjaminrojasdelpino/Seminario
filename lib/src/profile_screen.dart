@@ -19,7 +19,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       backgroundColor: backgroundColor,
       body: Column(
         children: [
-          TopBar(),
+          const TopBar(),
           Row(
             children: [
               SideBar(
