@@ -57,7 +57,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     // * Content
                     Container(
-                      width: width * 0.6,
+                      width: width * 0.7,
                       height: height * 0.65,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -183,6 +183,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                           ),
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(
+                                            "   Matias Alonso Espinoza Aranguiz",
+                                            style: TextStyle(
+                                              color: activeColor,
+                                              fontSize: height * 0.015,
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -208,6 +216,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             color: const Color(0xFFc0c0c0),
                                             borderRadius:
                                                 BorderRadius.circular(10),
+                                          ),
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(
+                                            "   20.182.315-3",
+                                            style: TextStyle(
+                                              color: activeColor,
+                                              fontSize: height * 0.015,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -235,6 +251,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                           ),
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(
+                                            "   Ingienería Civil en Informática",
+                                            style: TextStyle(
+                                              color: activeColor,
+                                              fontSize: height * 0.015,
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -260,6 +284,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             color: placeholdColor,
                                             borderRadius:
                                                 BorderRadius.circular(10),
+                                          ),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "   Matias Alonso Espinoza Aranguiz",
+                                                style: TextStyle(
+                                                  color: activeColor,
+                                                  fontSize: height * 0.015,
+                                                ),
+                                              ),
+                                              Container(
+                                                margin: EdgeInsets.only(
+                                                  right: width * 0.01,
+                                                ),
+                                                child: Icon(
+                                                  FontAwesomeIcons.caretDown,
+                                                  color: activeColor,
+                                                  size: height * 0.02,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
                                       ],
@@ -287,6 +334,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                           ),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "   +56993644989",
+                                                style: TextStyle(
+                                                  color: activeColor,
+                                                  fontSize: height * 0.015,
+                                                ),
+                                              ),
+                                              Container(
+                                                margin: EdgeInsets.only(
+                                                  right: width * 0.01,
+                                                ),
+                                                child: Icon(
+                                                  FontAwesomeIcons.pen,
+                                                  color: activeColor,
+                                                  size: height * 0.02,
+                                                ),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -313,6 +383,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                           ),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "   matias.espinozaaranguiz@gmail.com",
+                                                style: TextStyle(
+                                                  color: activeColor,
+                                                  fontSize: height * 0.015,
+                                                ),
+                                              ),
+                                              Container(
+                                                margin: EdgeInsets.only(
+                                                  right: width * 0.01,
+                                                ),
+                                                child: Icon(
+                                                  FontAwesomeIcons.pen,
+                                                  color: activeColor,
+                                                  size: height * 0.02,
+                                                ),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -331,12 +424,38 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                           ),
                                         ),
                                         Container(
+                                          padding: EdgeInsets.only(top: 5),
                                           width: width * 0.32,
                                           height: height * 0.1,
                                           decoration: BoxDecoration(
                                             color: placeholdColor,
                                             borderRadius:
                                                 BorderRadius.circular(10),
+                                          ),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "   Me gusta el futbol y los videojuegos, me gusta interactuar con la comunidad",
+                                                style: TextStyle(
+                                                  color: activeColor,
+                                                  fontSize: height * 0.015,
+                                                ),
+                                              ),
+                                              Container(
+                                                margin: EdgeInsets.only(
+                                                  right: width * 0.01,
+                                                ),
+                                                child: Icon(
+                                                  FontAwesomeIcons.pen,
+                                                  color: activeColor,
+                                                  size: height * 0.02,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
                                       ],
@@ -355,7 +474,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: Text(
-                                        "Cambiar Contraseña",
+                                        "Guardar Perfil",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontSize: height * 0.015,

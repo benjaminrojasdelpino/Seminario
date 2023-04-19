@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portal_de_estudiantes/src/create_thread.dart';
 import 'package:portal_de_estudiantes/utils/portal_corlos.dart';
 
 class DiscoverCreateThreads extends StatelessWidget {
@@ -62,28 +63,40 @@ class DiscoverCreateThreads extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(
-                  width: width * 0.15,
-                  height: height * 0.4,
-                  decoration: BoxDecoration(
-                    color: activeColor,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: width * 0.01)),
-                      Icon(
-                        FontAwesomeIcons.squarePlus,
-                        size: height * 0.23,
-                        color: Colors.white,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation1, animation2) =>
+                            CreateThreadScreen(),
+                        transitionDuration: Duration.zero,
                       ),
-                      Padding(padding: EdgeInsets.only(left: width * 0.025)),
-                      Text(
-                        "Crear Hilo",
-                        style: TextStyle(
-                            color: Colors.white, fontSize: height * 0.2),
-                      )
-                    ],
+                    );
+                  },
+                  child: Container(
+                    width: width * 0.15,
+                    height: height * 0.4,
+                    decoration: BoxDecoration(
+                      color: activeColor,
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: width * 0.01)),
+                        Icon(
+                          FontAwesomeIcons.squarePlus,
+                          size: height * 0.23,
+                          color: Colors.white,
+                        ),
+                        Padding(padding: EdgeInsets.only(left: width * 0.025)),
+                        Text(
+                          "Crear Hilo",
+                          style: TextStyle(
+                              color: Colors.white, fontSize: height * 0.2),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],

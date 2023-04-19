@@ -17,3 +17,15 @@ const Color inactiveColor = Color(0xFF7a7a7a);
 
 const Color blackText = Color(0xFF000000);
 const Color blueText = Color(0xFF171d78);
+
+// * Picker Color
+const Color color1 = Color(0xFF3b1d8f);
+const Color color2 = Color(0xFF7e2199);
+const Color color3 = Color(0xFF9c1f4d);
+const Color color4 = Color(0xFFdc4c18);
+const Color color5 = Color(0xFF000000);
+const Color color6 = Color(0xFF0c59cf);
+const Color color7 = Color(0xFF008db1);
+const Color color8 = Color(0xFFd68227);
+const Color color9 = Color(0xFF629c44);
+const Color color10 = Color(0xFFc1d045);
