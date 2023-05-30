@@ -55,7 +55,7 @@ class _PlannerScreenState extends State<PlannerScreen> {
                     ),
                     Container(
                       width: width * 0.7,
-                      height: height * 0.8,
+                      height: height * 0.5,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5),

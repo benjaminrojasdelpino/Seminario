@@ -56,7 +56,7 @@ class SliderNewThreads extends StatelessWidget {
           ThreadCard(
             thread: ThreadModel(
               name: "Conversación",
-              description: "Aqui habalmos de todo...",
+              description: "Aqui hablamos de todo...",
               color: Colors.deepPurple,
               imagePath:
                   "https://images.squarespace-cdn.com/content/v1/51bdd6cfe4b09566e1112c43/1525693092012-Z6JGMU8GS856DTUWIV3H/conversaciones+escenas+comunicaicon?format=1000w",

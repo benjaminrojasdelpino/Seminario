@@ -7,6 +7,8 @@ import 'package:portal_de_estudiantes/models/thread_model.dart';
 import 'package:portal_de_estudiantes/utils/portal_corlos.dart';
 import 'package:portal_de_estudiantes/widgets/threads_button.dart';
 
+import '../src/threads_screen.dart';
+
 class FollowThreads extends StatelessWidget {
   double width;
   double heigth;
@@ -84,26 +86,38 @@ class FollowThreads extends StatelessWidget {
             ),
           ),
           // * ShowMore
-          Container(
-            margin: EdgeInsets.only(top: heigth * 0.02),
-            width: width * 0.3,
-            height: heigth * 0.1,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(
-                  FontAwesomeIcons.plus,
-                  color: activeColor,
-                  size: heigth * 0.05,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation1, animation2) =>
+                      ThreadsScreen(),
+                  transitionDuration: Duration.zero,
                 ),
-                Text(
-                  "Ver Más",
-                  style: TextStyle(
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.only(top: heigth * 0.02),
+              width: width * 0.3,
+              height: heigth * 0.1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(
+                    FontAwesomeIcons.plus,
                     color: activeColor,
-                    fontSize: heigth * 0.04,
+                    size: heigth * 0.05,
                   ),
-                ),
-              ],
+                  Text(
+                    "Ver Más",
+                    style: TextStyle(
+                      color: activeColor,
+                      fontSize: heigth * 0.04,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
