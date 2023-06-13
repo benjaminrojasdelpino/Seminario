@@ -6,12 +6,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portal_de_estudiantes/utils/portal_corlos.dart';
 
 class PublishBox extends StatefulWidget {
-  bool isExpanded = true;
+  bool isExpanded = false;
   bool isFile = true;
   double width;
   double height;
-
-  final String text = "Xd";
 
   PublishBox({
     Key? key,
